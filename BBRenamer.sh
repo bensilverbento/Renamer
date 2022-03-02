@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Ben Silver
-# Grab the serial number and rename the computer 
+# Grab the serial number and rename the computer
+# To run:
+# Clear; curl https://raw.githubusercontent.com/bensilverbento/Renamer/main/BBRenamer.sh -o bbrenamer.sh; chmod +x ~/bbrenamer.sh; sudo ~/bbrenamer.sh; rm ~/bbrenamer.sh
 #Grab Serial Number
 sn=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
 #Rename to BB-Serial (LocalHostName has no dash)
