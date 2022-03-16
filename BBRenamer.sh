@@ -10,7 +10,7 @@ Echo
 sudo /usr/local/bin/jamf removeFramework -v foo >/dev/null 2>&1 || { echo "No Previous JAMF profiles found" >&2; }
 
 Echo ""
-read -p "Press Enter to Continue"
+read -p "Press Enter to Continue: "
 
 # Grab the serial number and rename the computer 
 sn=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
@@ -68,5 +68,5 @@ Echo = HostName: $(scutil --get HostName)
 Echo = LocalHostName: $(scutil --get LocalHostName)
 Echo
 Echo ""
-read -p "Press Enter to Finish"
+read -p "Press Enter to Finish: "
 exit
