@@ -5,7 +5,6 @@ sn=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
 scutil --set LocalHostName BB$sn
 scutil --set ComputerName BB-$sn
 scutil --set HostName BB-$sn
-sudo dscacheutil -flushcache
 Clear
 Echo Updating Computer Information:
 Echo ===
@@ -45,6 +44,7 @@ sleep 1
 clear
 Echo Updating Computer Information:
 Echo ==============================
+sudo dscacheutil -flushcache
 sleep 1
 Clear
 Echo Names:
