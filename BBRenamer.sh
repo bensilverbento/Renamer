@@ -59,10 +59,14 @@ Echo ==============================
 sudo dscacheutil -flushcache
 sleep 1
 Clear
-Echo Names:
+Echo =========================================
+Echo = Names (May Require Restart to Update) =
+Echo =========================================
 Echo
-Echo ComputerName: $(scutil --get ComputerName)
-Echo HostName: $(scutil --get HostName)
-Echo LocalHostName: $(scutil --get LocalHostName)
+Echo = ComputerName: $(scutil --get ComputerName)
+Echo = HostName: $(scutil --get HostName)
+Echo = LocalHostName: $(scutil --get LocalHostName)
 Echo
-Echo
+Echo ""
+read -p "Press Enter to Finish"
+exit
