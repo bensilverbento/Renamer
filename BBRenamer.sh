@@ -9,7 +9,7 @@ Echo ===================================
 Echo
 sudo /usr/local/bin/jamf removeFramework -v foo >/dev/null 2>&1 || { echo "No Previous JAMF profiles found" >&2; }
 
-Echo
+Echo ""
 read -p "Press Enter to Continue"
 
 # Grab the serial number and rename the computer 
