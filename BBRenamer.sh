@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Ben Silver
 
-
 clear
 Echo ===================================
 Echo = Removing previous JAMF profiles =
