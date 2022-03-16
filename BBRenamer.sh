@@ -51,6 +51,6 @@ Echo Names:
 Echo
 Echo ComputerName: $(scutil --get ComputerName)
 Echo HostName: $(scutil --get HostName)
-Echo LocalHostName: $(BB$sn)
+Echo LocalHostName: $(scutil --get LocalHostName)
 Echo
 Echo
