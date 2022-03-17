@@ -12,8 +12,11 @@ Echo "";
 
 
 # Remove JAMF if Installed
-Echo " * Attempting to Remove Previous JAMF Profiles"
+Echo " * Attempting to Remove";
+Echo "   Previous JAMF Profiles";
+Echo "";
 sudo /usr/local/bin/jamf removeFramework -v foo >/dev/null 2>&1 || { echo " * No Previous JAMF Profiles Found" >&2; };
+Echo "";
 Echo " * JAMF is clear"
 Echo "";
 read -p "Press Enter to Continue: ";
