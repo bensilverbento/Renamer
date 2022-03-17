@@ -12,11 +12,11 @@ Echo "";
 
 
 # Remove JAMF if Installed
-sudo /usr/local/bin/jamf removeFramework -v foo >/dev/null 2>&1 || { echo " * No Previous JAMF profiles found" >&2; };
+Echo " * Attempting to Remove Previous JAMF Profiles"
+sudo /usr/local/bin/jamf removeFramework -v foo >/dev/null 2>&1 || { echo " * No Previous JAMF Profiles Found" >&2; };
 Echo " * JAMF is clear"
 Echo "";
 read -p "Press Enter to Continue: ";
-
 
 # Grab the serial number and rename the computer 
 sn=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}');
@@ -32,74 +32,83 @@ Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--***--";
 Echo "";
-Sleep 1;
+Sleep .5;
 clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--******--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 Clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--*********--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 Clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--************--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--***************--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 Clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--******************--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 Clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--*********************--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 Clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--************************--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 Clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--***************************--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 clear;
 Echo "==================================";
 Echo "= Updating Computer Information: =";
 Echo "==================================";
 Echo "--******************************--";
 Echo "";
-Sleep 1;
+Sleep .5;
+
 Clear;
-Echo "===============================";
-Echo "= Names (may require restart) =";
-Echo "===============================";
+Echo "===========================";
+Echo "= Names Have Been Updated =";
+Echo "===========================";
 Echo "";
 Echo "ComputerName: $(scutil --get ComputerName)";
 Echo "HostName: $(scutil --get HostName)";
@@ -144,6 +153,6 @@ Echo "PASSWORD=======================================";
 Echo "WelcomeFiserv1\!";
 Echo "";
 Echo "";
-Echo "";
-Echo "";
+Echo "================================================================";
+Echo "================================================================";
 exit;
