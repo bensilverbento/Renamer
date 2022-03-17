@@ -2,6 +2,7 @@
 # Ben Silver
 
 Clear;
+
 Echo "=====================================";
 Echo "=                                   =";
 Echo "=  Removing previous JAMF profiles  =";
