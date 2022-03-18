@@ -153,7 +153,7 @@ Echo "USER NAME======================================";
 Echo "fsjamf-enroll";
 Echo "";
 Echo "PASSWORD=======================================";
-Echo "WelcomeFiserv1\!";
+Echo "WelcomeFiserv1!";
 Echo "";
 Echo "";
 Echo "================================================================";
