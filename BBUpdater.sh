@@ -23,6 +23,7 @@ read -p "Press Enter to Continue: ";
 
 # Grab the serial number and rename the computer 
 sn=$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}');
+Sleep 3
 scutil --set LocalHostName BB$sn;
 scutil --set ComputerName BB-$sn;
 scutil --set HostName BB-$sn;
